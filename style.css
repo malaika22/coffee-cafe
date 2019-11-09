@@ -1,0 +1,402 @@
+body{
+    margin:0px;
+    border:0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+/* ############HEADER###################### */
+header{
+    background-image: url(img/header-bg.jpg);
+    height:650px;
+    background-size:cover;
+    
+   
+}
+.nav-options-sub{
+    padding: 0px;
+    margin-right: 0px;
+    list-style: none;
+}
+nav{
+    display: flex;
+    padding: 30px 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-options-sub{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.nav-options-sub a{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: white;
+}
+.nav-options-sub li{
+    padding: 0px 20px;
+    font-size: 1.7rem;
+}
+.intro-heading{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin: 10px;
+}
+.intro{
+    width: 60%;
+    padding: 30px 50px;
+    
+}
+.buy-botton{
+    padding: 20px;
+    display: inline;
+    margin: 10px;
+    background-color: #ffe39c;
+    border-radius:  10px;
+}
+.buy-botton a{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: black;
+
+}
+.buy-botton:hover{
+    background-color: #aa9b57;
+}
+.button{
+    margin-top: 30px;
+}
+/* ############MENU####################### */
+.menu{
+    background-image: url(img/menu-bg.jpg);
+    padding-bottom: 100px;
+}
+.menu-heading{
+    text-align: center;
+    padding-top: 40px;
+}
+.menu-heading h1{
+    padding-top:20px;
+    padding-bottom: 10px;   
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+    font-size: 2.5rem;
+}
+.menu-heading p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    opacity: 0.5;
+}
+#menu-options{
+    display:grid;
+    padding: 50px;
+    padding-top:90px;
+    justify-content: space-evenly;
+    grid-template-columns: 350px 350px 350px;
+}
+.name-price{
+    display: flex;
+    justify-content: space-between;
+}
+/* .name-price h2{
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+} */
+.name-price h2{
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.3rem;
+}
+.price{
+    color: #b68834;
+}
+.coffee-details{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+.coffees{
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+/* #############GALLERY-IMAGES####################### */
+.gallery-images{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 450px 400px 300px;
+    overflow: hidden;
+}
+.g1{
+    padding: 60px;
+} 
+.g2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+} 
+.g3{
+    padding: 50px;
+    padding-top: 0px;
+} 
+ .g4{
+    padding-top: 50px;
+    padding-left: 0px;
+}
+.g5{
+    padding-top:50px;
+} 
+.g5 img{
+    width:100%;
+}
+/* #############Review################ */
+.reviews{
+    background-color: #b68834;
+}
+.review-sub {
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+
+}
+.review-1{
+    padding:30px 50px;
+}
+.reviews .menu-heading h1{
+    color:white
+}
+.reviews .menu-heading{
+    padding-top:60px;
+}
+.review-heading{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+.review-des{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+/* #############Footer############### */
+footer{
+    background-image: url(img/footer-bg.jpg);
+    padding-top:200px;
+    padding-bottom:120px;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+    display:flex;
+    flex-wrap:wrap;
+    /* align-items: center; */
+}
+.about-heading{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+.about-info{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.copyright{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0.7;
+}
+.About-us{
+    margin: 0px 50px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 70%;
+}
+.follow{
+    text-align: center;
+}
+.icon{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+}
+.follow-heading{
+    color:white;
+    margin-top:0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* ##########Media-query################# */
+@media screen and (max-width:1281px)
+{
+    .gallery-images{
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+}
+
+    
+    .image img{
+        max-width:100%;
+    }
+    .g4{
+        grid-column-start:2;
+        grid-column-end:4;
+        justify-self: center;
+    padding-top: 0;
+    }
+    .g5{
+        grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-top: 0px;
+}
+.g5 img{
+    max-width: 360px;
+}
+    }
+
+@media screen and (max-width: 1248px)
+{
+    #menu-options{
+    padding: 0px;
+    padding-top: 90px;
+    }
+}
+@media screen and (max-width:1153px)
+{
+    .intro{
+        padding-top:0px;
+        width:80%;
+    }
+    .button{
+        margin-top:20px;
+    }
+
+}
+@media screen and (max-width:1124px)
+{
+    #menu-options{
+        grid-template-columns: auto auto auto;
+
+    }
+    .coffees{
+        margin: 30px 10px;
+    }
+}
+@media screen and (max-width:1069px)
+{
+    .follow{
+        margin-left:50px;
+        text-align: start; 
+    }
+    .follow-heading{
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    .icon{
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (max-width:920px)
+{
+    #menu-options{
+        grid-template-columns: auto auto;
+        margin: 0px 20px;
+    }
+    .intro{
+        width: 80%;
+    padding: 0px 20px;
+}
+    
+    .button{
+        margin-top: 30px;;
+    }
+    .intro-heading{
+        font-size:40px;
+    }
+    .review-sub{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .gallery-images{
+        grid-template-columns: auto auto auto;
+        padding: 0px;
+        justify-content: center;
+    }
+    .image{
+        grid-column-start:1;
+        grid-column-end:4;
+        padding:0px;
+        padding: 30px ;
+    }
+    .image img{
+        max-width: 360px;
+    }
+}
+@media screen and (max-width:720px)
+{
+    .logo{
+       width: 100%;
+       padding: 10px 15px;
+    }
+    .review-sub{
+        flex-wrap:wrap;
+    }
+    .review-1{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 546px)
+{
+nav{
+    padding: 40px 0px;
+}
+.nav-options-sub li{
+    padding:0px 15px;
+}
+.intro{
+    width: 100%;
+    padding: 0px 10px;
+}
+.intro-heading{
+    font-size:40px;
+}
+.coffees{
+    grid-column-start: 1;
+    grid-column-end:4;
+}
+#menu-options{
+    grid-template-columns: auto auto auto;
+}
+.coffees{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.gallery-images{
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    justify-content: center;
+}
+.image{
+    grid-column-start:1;
+    grid-column-end:4;
+    padding:0px;
+    padding: 30px ;
+}
+.image img{
+    max-width: 300px;
+}
+
+
+}
